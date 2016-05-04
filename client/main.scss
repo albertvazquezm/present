@@ -1,3 +1,4 @@
-/* CSS declarations go here */
 @import '{zurb:foundation-sites}/scss/foundation';
-@include foundation-everything;
+@include foundation-everything(true);
+
+@import '../imports/components/userHeader/userHeader.scss';
