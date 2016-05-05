@@ -1,9 +1,10 @@
-<header>
-  <h1>Todo List</h1>
-</header>
-
+<h4>Qué regalarme</h4>
 <ul>
   <li ng-repeat="task in $ctrl.presents">
-    {{task.title}}
+    <div class="present">
+      <img src="present.img" />
+      <strong ng-bind="present.title"></strong>
+      <p ng-bind="present.description"></p>
+    </div>
   </li>
 </ul>

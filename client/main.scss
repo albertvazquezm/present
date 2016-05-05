@@ -1,4 +1,12 @@
 @import '{zurb:foundation-sites}/scss/foundation';
+
+
+$grid-column-gutter: (
+  small: 0px,
+  medium: 0px,
+);
+
+
 @include foundation-everything(true);
 
 @import '../imports/components/userHeader/userHeader.scss';
