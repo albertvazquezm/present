@@ -1,0 +1,10 @@
+
+.present-list{
+    list-style-type: none;
+    margin: 0;
+    .present{
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 1px #eee solid;
+    }
+}

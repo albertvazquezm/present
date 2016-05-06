@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
-import '../imports/api/presents.js';
+import {Presents} from '../imports/api/presents.js';
 
 Meteor.startup(() => {
-  // code to run on server at startup
+  //Presents.insert({title: "PS4 Edición PRO FIFA", description: "Con dos mandos"});
 });

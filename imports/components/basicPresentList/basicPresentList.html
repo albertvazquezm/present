@@ -1,10 +1,13 @@
-<h4>Qué regalarme</h4>
-<ul>
-  <li ng-repeat="task in $ctrl.presents">
-    <div class="present">
-      <img src="present.img" />
-      <strong ng-bind="present.title"></strong>
-      <p ng-bind="present.description"></p>
-    </div>
-  </li>
-</ul>
+<div class="what-present standard-padding">
+    <h4>Qué regalarme</h4>
+    <ul class="present-list">
+      <li ng-repeat="present in $ctrl.presents">
+        <div class="present">
+          <img src="present.img" />
+          <strong ng-bind="present.title"></strong>
+          <p ng-bind="present.description"></p>
+        </div>
+      </li>
+    </ul>
+</div>
+

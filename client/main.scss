@@ -9,4 +9,20 @@ $grid-column-gutter: (
 
 @include foundation-everything(true);
 
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+.standard-padding{
+    padding: 15px;
+}
+.user-column{
+    background: #eee;
+    height: 100%;
+}
+.full-height{
+    height: 100%;
+}
+
 @import '../imports/components/userHeader/userHeader.scss';
+@import '../imports/components/basicPresentList/basicPresentList.scss';
