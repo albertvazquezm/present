@@ -1,17 +1,12 @@
 import angular from 'angular';
 import angularMeteor from 'angular-meteor';
 import template from './userHeader.html';
+import Meteor from 'meteor/meteor';
 //import { Presents } from '../../api/presents.js';
 
 class UserHeaderCtrl {
   constructor($scope) {
-    /*$scope.viewModel(this);
-
-    this.helpers({
-      presents() {
-        return Presents.find({});
-      }
-    })*/
+    $scope.viewModel(this);
   }
 }
 
