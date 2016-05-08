@@ -12,29 +12,21 @@ require('reflect-metadata');
 require('zone.js/dist/zone');
 var core_1 = require('angular2/core');
 var browser_1 = require('angular2/platform/browser');
+var presents_ts_1 = require('../collections/presents.ts');
+var tracker_1 = require('meteor/tracker');
 var Presents = (function () {
-    function Presents() {
-        this.presents = [
-            { 'name': 'Dubstep-Free Zone',
-                'description': 'Can we please just for an evening not listen to dubstep.',
-                'img': 'http://placehold.it/200x200'
-            },
-            { 'name': 'All dubstep all the time',
-                'description': 'Get it on!',
-                'img': 'http://placehold.it/200x200'
-            },
-            { 'name': 'Savage lounging',
-                'description': 'Leisure suit required. And only fiercest manners.',
-                'img': 'http://placehold.it/200x200'
-            }
-        ];
+    function Presents(zone) {
+        var _this = this;
+        tracker_1.Tracker.autorun(function () { return zone.run(function () {
+            _this.presents = presents_ts_1.Presents.find().fetch();
+        }); });
     }
     Presents = __decorate([
         core_1.Component({
             selector: 'app',
             templateUrl: 'client/app.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [core_1.NgZone])
     ], Presents);
     return Presents;
 }());
