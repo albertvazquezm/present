@@ -17,7 +17,12 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
-angular-templates
 seba:minifiers-autoprefixer
 fourseven:scss
 zurb:foundation-sites
+accounts-password
+dotansimha:accounts-ui-angular
+accounts-github
+accounts-google
+angular2-compilers
+barbatus:angular2-runtime

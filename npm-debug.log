@@ -1,45 +1,139 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'start' ]
-2 info using npm@3.8.3
-3 info using node@v5.10.1
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info lifecycle meteor-present@~prestart: meteor-present@
-6 silly lifecycle meteor-present@~prestart: no script for prestart, continuing
-7 info lifecycle meteor-present@~start: meteor-present@
-8 verbose lifecycle meteor-present@~start: unsafe-perm in lifecycle true
-9 verbose lifecycle meteor-present@~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/albert/Documents/albert/projects/meteor-present/node_modules/.bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-10 verbose lifecycle meteor-present@~start: CWD: /Users/albert/Documents/albert/projects/meteor-present
-11 silly lifecycle meteor-present@~start: Args: [ '-c', 'meteor run' ]
-12 silly lifecycle meteor-present@~start: Returned: code: 254  signal: null
-13 info lifecycle meteor-present@~start: Failed to exec start script
-14 verbose stack Error: meteor-present@ start: `meteor run`
-14 verbose stack Exit status 254
-14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:239:16)
-14 verbose stack     at emitTwo (events.js:100:13)
-14 verbose stack     at EventEmitter.emit (events.js:185:7)
-14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
-14 verbose stack     at emitTwo (events.js:100:13)
-14 verbose stack     at ChildProcess.emit (events.js:185:7)
-14 verbose stack     at maybeClose (internal/child_process.js:850:16)
-14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
-15 verbose pkgid meteor-present@
-16 verbose cwd /Users/albert/Documents/albert/projects/meteor-present
-17 error Darwin 15.4.0
-18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
-19 error node v5.10.1
-20 error npm  v3.8.3
-21 error code ELIFECYCLE
-22 error meteor-present@ start: `meteor run`
-22 error Exit status 254
-23 error Failed at the meteor-present@ start script 'meteor run'.
-23 error Make sure you have the latest version of node.js and npm installed.
-23 error If you do, this is most likely a problem with the meteor-present package,
-23 error not with npm itself.
-23 error Tell the author that this fails on your system:
-23 error     meteor run
-23 error You can get information on how to open an issue for this project with:
-23 error     npm bugs meteor-present
-23 error Or if that isn't available, you can get their info via:
-23 error     npm owner ls meteor-present
-23 error There is likely additional logging output above.
-24 verbose exit [ 1, true ]
+1 verbose cli [ 'node',
+1 verbose cli   '/Users/Albert/.meteor/packages/meteor-tool/.1.3.2_4.lbyo5v++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   '@angular' ]
+2 info using npm@2.14.22
+3 info using node@v0.10.43
+4 verbose install initial load of /Users/Albert/Documents/projects/meteor-present/package.json
+5 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/angular2/package.json
+6 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/angular2-google-maps/package.json
+7 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/angular2-meteor/package.json
+8 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/angular2-meteor-accounts-ui/package.json
+9 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/angular2-meteor-auto-bootstrap/package.json
+10 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/angular2-pagination/package.json
+11 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/ansi-regex/package.json
+12 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/ansi-styles/package.json
+13 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/asap/package.json
+14 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/asn1/package.json
+15 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/assert-plus/package.json
+16 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/async/package.json
+17 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/aws-sign2/package.json
+18 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/aws4/package.json
+19 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/big.js/package.json
+20 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/bl/package.json
+21 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/boom/package.json
+22 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/caseless/package.json
+23 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/chalk/package.json
+24 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/combined-stream/package.json
+25 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/commander/package.json
+26 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/core-util-is/package.json
+27 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/cryptiles/package.json
+28 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/dashdash/package.json
+29 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/delayed-stream/package.json
+30 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/ecc-jsbn/package.json
+31 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/emojis-list/package.json
+32 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/errno/package.json
+33 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/es6-promise/package.json
+34 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/es6-shim/package.json
+35 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/escape-string-regexp/package.json
+36 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/extend/package.json
+37 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/extsprintf/package.json
+38 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/foreachasync/package.json
+39 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/forever-agent/package.json
+40 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/form-data/package.json
+41 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/fs-extra/package.json
+42 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/fs.extra/package.json
+43 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/generate-function/package.json
+44 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/generate-object-property/package.json
+45 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/getpass/package.json
+46 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/graceful-fs/package.json
+47 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/graceful-readlink/package.json
+48 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/har-validator/package.json
+49 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/has-ansi/package.json
+50 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/hawk/package.json
+51 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/hoek/package.json
+52 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/http-signature/package.json
+53 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/image-size/package.json
+54 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/inherits/package.json
+55 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/ionic-webpack-package/package.json
+56 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/is-my-json-valid/package.json
+57 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/is-property/package.json
+58 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/is-typedarray/package.json
+59 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/isarray/package.json
+60 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/isstream/package.json
+61 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/jodid25519/package.json
+62 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/jsbn/package.json
+63 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/json-schema/package.json
+64 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/json-stringify-safe/package.json
+65 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/json5/package.json
+66 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/jsonfile/package.json
+67 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/jsonpointer/package.json
+68 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/jsprim/package.json
+69 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/less/package.json
+70 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/less-loader/package.json
+71 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/loader-utils/package.json
+72 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/meteor-node-stubs/package.json
+73 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/meteor-promise/package.json
+74 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/mime/package.json
+75 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/mime-db/package.json
+76 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/mime-types/package.json
+77 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/minimist/package.json
+78 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/mkdirp/package.json
+79 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/ncp/package.json
+80 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/ng2-material/package.json
+81 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/node-uuid/package.json
+82 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/oauth-sign/package.json
+83 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/object-assign/package.json
+84 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/pinkie/package.json
+85 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/pinkie-promise/package.json
+86 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/process-nextick-args/package.json
+87 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/promise/package.json
+88 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/prr/package.json
+89 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/qs/package.json
+90 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/readable-stream/package.json
+91 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/reflect-metadata/package.json
+92 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/request/package.json
+93 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/rimraf/package.json
+94 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/rxjs/package.json
+95 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/sntp/package.json
+96 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/source-map/package.json
+97 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/sshpk/package.json
+98 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/string_decoder/package.json
+99 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/stringstream/package.json
+100 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/strip-ansi/package.json
+101 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/supports-color/package.json
+102 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/tough-cookie/package.json
+103 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/tunnel-agent/package.json
+104 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/tweetnacl/package.json
+105 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/util-deprecate/package.json
+106 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/verror/package.json
+107 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/walk/package.json
+108 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/xtend/package.json
+109 verbose installManyTop reading scoped package data from /Users/Albert/Documents/projects/meteor-present/node_modules/zone.js/package.json
+110 info package.json angular2-meteor-auto-bootstrap@0.5.4 No repository field.
+111 info package.json string_decoder@0.10.31 string_decoder is also the name of a node core module.
+112 verbose readDependencies loading dependencies from /Users/Albert/Documents/projects/meteor-present/package.json
+113 silly cache add args [ '@angular', null ]
+114 verbose cache add spec @angular
+115 silly cache add parsed spec { raw: '@angular',
+115 silly cache add   scope: null,
+115 silly cache add   name: null,
+115 silly cache add   rawSpec: '@angular',
+115 silly cache add   spec: '/Users/Albert/Documents/projects/meteor-present/@angular',
+115 silly cache add   type: 'local' }
+116 error addLocal Could not install /Users/Albert/Documents/projects/meteor-present/@angular
+117 verbose stack Error: ENOENT, open '/Users/Albert/Documents/projects/meteor-present/@angular'
+118 verbose cwd /Users/Albert/Documents/projects/meteor-present
+119 error Darwin 15.4.0
+120 error argv "node" "/Users/Albert/.meteor/packages/meteor-tool/.1.3.2_4.lbyo5v++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm" "install" "--save" "@angular"
+121 error node v0.10.43
+122 error npm  v2.14.22
+123 error path /Users/Albert/Documents/projects/meteor-present/@angular
+124 error code ENOENT
+125 error errno 34
+126 error enoent ENOENT, open '/Users/Albert/Documents/projects/meteor-present/@angular'
+126 error enoent This is most likely not a problem with npm itself
+126 error enoent and is related to npm not being able to find a file.
+127 verbose exit [ 34, true ]
