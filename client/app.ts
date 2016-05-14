@@ -5,7 +5,7 @@ import {bootstrap} from 'angular2/platform/browser';
 import {ROUTER_PROVIDERS, ROUTER_DIRECTIVES, RouteConfig} from 'angular2/router';
 import {APP_BASE_HREF} from 'angular2/platform/common';
 
-import {PresentList} from './imports/present-list/present-list.ts';
+import {Columns} from './imports/columns/columns.ts';
 import {UserSearch} from './imports/user-search/user-search.ts';
 
 @Component({
@@ -15,7 +15,7 @@ import {UserSearch} from './imports/user-search/user-search.ts';
 })
 
 @RouteConfig([
-  { path: '/', as: 'PresentList', component: PresentList },
+  { path: '/', as: 'Columns', component: Columns },
   { path: '/users', as: 'UserSearch', component: UserSearch }
 ])
 

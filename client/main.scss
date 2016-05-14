@@ -1,11 +1,13 @@
 @import '{zurb:foundation-sites}/scss/foundation';
 
+@import 'styles/colors';
+
+@import 'imports/columns/columns';
 
 $grid-column-gutter: (
   small: 0px,
   medium: 0px,
 );
-
 
 @include foundation-everything(true);
 
@@ -16,14 +18,6 @@ body{
 .standard-padding{
     padding: 15px;
 }
-.user-column{
-    background: #eee;
-    height: 100%;
-}
 .full-height{
     height: 100%;
 }
-/*
-@import '../imports/components/userHeader/userHeader.scss';
-@import '../imports/components/basicPresentList/basicPresentList.scss';
-*/
