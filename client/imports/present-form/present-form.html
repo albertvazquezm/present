@@ -1,0 +1,5 @@
+<form [ngFormModel]="presentForm" #form="ngForm" (submit)="addPresent(form.value)">
+    <input ngControl="name" type="text" placeholder="Nombre">
+    <textarea ngControl="description" placeholder="Descripción"></textarea>
+    <button type="submit" class="button">Crear</button>
+</form>

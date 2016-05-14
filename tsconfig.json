@@ -22,6 +22,9 @@
   },
   "files": [
     "client/app.ts",
+    "client/imports/present-form/present-form.ts",
+    "client/imports/present-list/present-list.ts",
+    "client/imports/user-search/user-search.ts",
     "server/main.ts"
   ]
 }
