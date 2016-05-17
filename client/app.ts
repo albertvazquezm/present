@@ -15,8 +15,7 @@ import {UserSearch} from './imports/user-search/user-search.ts';
 })
 
 @RouteConfig([
-  { path: '/', as: 'Columns', component: Columns },
-  { path: '/users', as: 'UserSearch', component: UserSearch }
+  { path: '...', as: 'Columns', component: Columns },
 ])
 
 class App {}
