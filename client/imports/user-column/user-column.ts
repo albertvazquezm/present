@@ -1,7 +1,7 @@
 import {Component, NgZone} from 'angular2/core';
 import {PresentForm} from '../present-form/present-form.ts';
 import {PresentList} from '../present-list/present-list.ts';
-import { LoginButtons } from 'angular2-meteor-accounts-ui/login-buttons';
+import {UserInfoBlock} from '../user-info-block/user-info-block.ts';
 import {Mongo} from 'meteor/mongo';
 import {Tracker} from 'meteor/tracker';
 
@@ -11,7 +11,7 @@ import {Tracker} from 'meteor/tracker';
   directives: [
     PresentForm,
     PresentList,
-    LoginButtons
+    UserInfoBlock
   ]
 })
 export class UserColumn {
