@@ -5,7 +5,8 @@
         <register-form></register-form>
     </div>
     <div *ngIf="user" class="small-12 columns">
-        Hola!
+        Hola, {{user.profile.name}}!
         <button class="button" (click)="logout()">Salir</button>
+        <a [routerLink]="['MyProfile']">Mi perfil</a>
     </div>
 </div>

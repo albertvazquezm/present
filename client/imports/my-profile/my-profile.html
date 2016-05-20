@@ -1,0 +1,7 @@
+<h1>My profile</h1>
+<form [ngFormModel]="profileForm" #form="ngForm" (submit)="updateProfile(form.value)">
+    <input ngControl="email" type="email" placeholder="E-Mail">
+    <input ngControl="name" type="text" placeholder="Tu nombre completo">
+    
+    <button type="submit" class="button">Guardar</button>
+</form>

@@ -1,4 +1,5 @@
 import {Component, NgZone} from 'angular2/core';
+import {ROUTER_DIRECTIVES} from 'angular2/router';
 import {RegisterForm} from '../register-form/register-form.ts';
 import {LoginButtons} from 'angular2-meteor-accounts-ui/login-buttons';
 import {Mongo} from 'meteor/mongo';
@@ -10,17 +11,17 @@ import {Meteor} from 'meteor/meteor';
   templateUrl: '/client/imports/user-info-block/user-info-block.html',
   directives: [
     LoginButtons,
-    RegisterForm
+    RegisterForm,
+    ROUTER_DIRECTIVES
   ]
 })
 export class UserInfoBlock {
-    constructor(){
-        
+    constructor(zone: NgZone){
+        Tracker.autorun(() => zone.run(() => {
+            this.user = Meteor.user();
+        }));
     }
     logout(){
         Meteor.logout();
-    }
-    get user(): Object{
-        return Meteor.user();
     }
 }
