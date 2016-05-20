@@ -17,7 +17,8 @@ export class RegisterForm {
 
     this.registerForm = fb.group({
       email: ['', Validators.required],
-      password: ['', Validators.required]
+      password: ['', Validators.required],
+      name: ['', Validators.required]
     });
   }
 
@@ -25,10 +26,14 @@ export class RegisterForm {
     if (this.registerForm.valid) {
         Accounts.createUser({
             email: user.email,
-            password: user.password
+            password: user.password,
+            profile: {
+              name: user.name
+            }
         });
         (this.registerForm.controls['email']).updateValue('');
         (this.registerForm.controls['password']).updateValue('');
+        (this.registerForm.controls['name']).updateValue('');
     }
   }
 }

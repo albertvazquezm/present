@@ -16,6 +16,7 @@ import {Meteor} from 'meteor/meteor';
   ]
 })
 export class UserInfoBlock {
+    user: Object
     constructor(zone: NgZone){
         Tracker.autorun(() => zone.run(() => {
             this.user = Meteor.user();
