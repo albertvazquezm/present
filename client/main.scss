@@ -1,10 +1,12 @@
 @import '{zurb:foundation-sites}/scss/foundation';
+@import 'styles/_foundation-settings.scss';
 
 @import 'styles/colors';
 @import 'styles/forms';
 
 @import 'imports/columns/columns';
 @import 'imports/user-column/user-column';
+@import 'imports/header/header';
 
 $grid-column-gutter: (
   small: 0px,
@@ -14,7 +16,6 @@ $grid-column-gutter: (
 @include foundation-everything(true);
 
 body{
-    font-family: 'Roboto', sans-serif;
     height: 100%;
 }
 .standard-padding{
