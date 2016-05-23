@@ -1,7 +1,19 @@
-<h1>My profile</h1>
-<form [ngFormModel]="profileForm" #form="ngForm" (submit)="updateProfile(form.value)">
-    <input ngControl="email" type="email" placeholder="E-Mail">
-    <input ngControl="name" type="text" placeholder="Tu nombre completo">
-    
-    <button type="submit" class="button">Guardar</button>
-</form>
+<div class="page-content">
+    <h1>My profile</h1>
+    <form [ngFormModel]="profileForm" #form="ngForm" (submit)="updateProfile(form.value)">
+        <input ngControl="email" type="email" placeholder="E-Mail">
+        <input ngControl="name" type="text" placeholder="Tu nombre completo">
+        <div class="row">
+            <div class="small-4">
+                <input ngControl="birthDay" type="number" placeholder="Día">
+            </div>
+            <div class="small-4">
+                <input ngControl="birthMonth" type="number" placeholder="Mes">
+            </div>
+            <div class="small-4">
+                <input ngControl="birthYear" type="number" placeholder="Año">
+            </div>
+        </div>
+        <button type="submit" class="button right">Guardar</button>
+    </form>
+</div>

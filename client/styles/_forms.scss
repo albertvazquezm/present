@@ -1,3 +1,9 @@
-[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea{
-    border: 0;
+app{
+    [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea{
+        border: 0;
+        border-bottom: 2px $primary-color solid;
+        &:focus{
+            border-bottom: 2px $medium-gray solid;
+        }
+    }
 }
