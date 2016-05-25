@@ -16,7 +16,7 @@ export class UserSearchForm {
         });
     }
     
-    search(){
-        console.log('search');
+    onSearchKeyup(value){
+        console.log(event);
     }
 }
