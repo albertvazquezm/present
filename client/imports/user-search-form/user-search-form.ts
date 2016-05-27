@@ -1,6 +1,7 @@
-import {Component} from 'angular2/core';
+import {NgZone, Component} from 'angular2/core';
 import {FormBuilder, ControlGroup, Validators} from 'angular2/common';
-
+import {Meteor} from 'meteor/meteor';
+import {Tracker} from 'meteor/tracker';
 
 @Component({
   selector: 'user-search-form',
@@ -8,7 +9,9 @@ import {FormBuilder, ControlGroup, Validators} from 'angular2/common';
 })
 
 export class UserSearchForm {
-    constructor(){
+    users: Array
+    constructor(zone: NgZone){
+        this.zone = zone;
         let fb = new FormBuilder();
 
         this.searchForm = fb.group({
@@ -17,6 +20,12 @@ export class UserSearchForm {
     }
     
     onSearchKeyup(value){
-        console.log(event);
+        if(value.length > 3){
+            this.users = Meteor.users.find({
+                'profile.name': {$regex : '.*' + value + '.*'}
+            }).fetch();
+        }else{
+            this.users = [];
+        }
     }
 }

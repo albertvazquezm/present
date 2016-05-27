@@ -2,3 +2,15 @@
 <form>
     <input #query type="text" (keyup)="onSearchKeyup(query.value)" placeholder="Busca usuarios...">
 </form>
+<ul class="users-list">
+    <li class="user" *ngFor="let user of users">
+        <div class="row">
+            <div class="medium-3 columns">
+                <img class="user-image" src="http://placehold.it/40x40">
+            </div>
+            <div class="medium-9 columns">
+                {{user.profile.name}}
+            </div>
+        </div>
+    </li>
+</ul>
