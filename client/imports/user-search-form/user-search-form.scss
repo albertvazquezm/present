@@ -3,9 +3,17 @@
     margin: 0;
     .user{
         list-style-type: none;
-        padding: 10px 0;
+        margin: 10px 0;
+        padding: 5px;
+        border-bottom: 2px scale-color($secondary-color, $lightness: +40%) solid;
+        &:hover{
+            border-bottom: 2px $secondary-color solid;
+        }
         .user-image{
             border-radius: 50%;
+        }
+        .user-info{
+            padding: 7px;
         }
     }
 }

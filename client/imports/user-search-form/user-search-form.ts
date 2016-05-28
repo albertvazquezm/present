@@ -2,10 +2,14 @@ import {NgZone, Component} from 'angular2/core';
 import {FormBuilder, ControlGroup, Validators} from 'angular2/common';
 import {Meteor} from 'meteor/meteor';
 import {Tracker} from 'meteor/tracker';
+import {ROUTER_DIRECTIVES} from 'angular2/router';
 
 @Component({
   selector: 'user-search-form',
-  templateUrl: '/client/imports/user-search-form/user-search-form.html'
+  templateUrl: '/client/imports/user-search-form/user-search-form.html',
+  directives: [
+      ROUTER_DIRECTIVES
+  ]
 })
 
 export class UserSearchForm {
