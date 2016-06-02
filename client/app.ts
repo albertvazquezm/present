@@ -7,6 +7,10 @@ import {APP_BASE_HREF} from 'angular2/platform/common';
 
 import {Columns} from './imports/columns/columns.ts';
 import {UserSearch} from './imports/user-search/user-search.ts';
+import {NotificationsService} from './imports/notifications/notifications.service.ts';
+
+var notifications = new NotificationsService();
+notifications.startForOwnPresentReservations();
 
 @Component({
   selector: 'app',

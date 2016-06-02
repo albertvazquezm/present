@@ -22,6 +22,12 @@
             color: #aaa;
             padding: 2px 0;
             text-align: center;
+            &.reserve{
+                color: $success-color;
+            }
+            &.reserve.reserved{
+                color: $alert-color;
+            }
         }
     }
 }

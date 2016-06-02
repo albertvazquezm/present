@@ -8,12 +8,12 @@
             <strong>{{present.name}}</strong>
             <p class="description">{{present.description}}</p>
             <div class="present-actions">
-                <a class="action lock"><i class="fa fa-unlock-alt"></i></a>
-                <a class="action delete"><i class="fa fa-times"></i></a>
+                <a class="action reserve" [ngClass]="{'reserved': present.reserved}" (click)="reservePresent(present)">
+                    <i *ngIf="!present.reserved" class="fa fa-unlock"></i>
+                    <i *ngIf="present.reserved" class="fa fa-lock"></i>
+                </a>
+                <a class="action delete" (click)="removePresent(present)"><i class="fa fa-times"></i></a>
             </div>
-        </div>
-        <div class="small-4 hide">
-            <span (click)="removePresent(present)">Del</span>
         </div>
       </div>
   </li>
